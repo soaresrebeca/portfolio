@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Cor da LOGO: #ff7a7a 
+
+Cor de fundo preta: #21201f
+Cor de fundo beje: #f5ebe0
+
+*/
+
+/* ESTILO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #21201f;
+    height: 100vh;
+}
+
+.menu {
+    max-width: 1280px;
+    margin: 0 auto;
+} 
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #ff7a7a;
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #fd9494;
+    transform: scale(1.05);
+}
+
+.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.titulo span {
+    color: #ff7a7a;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    color: #ff7a7a;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+.topo-do-site {
+    padding: 40px 15%;
+}
+
+.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    color: #ff7a7a;
+}
+
+.topo-do-site p {
+    color: #fff;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate; 
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+
+.especialidades {
+    padding: 30px 15%;
+}
+
+.flex {
+    gap: 60px;
+}
+
+.especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff7a7a63;
+}
+
+.especialidades-box i {
+    font-size: 70px;
+    color: #ff7a7a;
+}
+
+.especialidades-box h3 {
+    font-size: 28px;
+    margin: 18px 0;
+}
+
+/* ESTILO DO SOBRE */
+
+.sobre {
+    padding: 80px 11%; 
+}
+
+.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.txt-sobre {
+    color: #fff;
+}
+
+.txt-sobre h2 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.txt-sobre h2 span {
+    color: #ff7a7a;
+    display: block;
+}
+
+.txt-sobre p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+
+    background-color: #ff7a7a;
+    color: #fff;
+
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* ESTILO DO PORTFÓLIO */
+
+.portfolio {
+    padding: 80px 11%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 480px;
+    
+    background-size: cover;
+    background-position: 50% 0%;
+
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+
+/*
+ATIVAR ROLAGEM DE IMAGEM
+
+.img-port:hover {
+    background-position: 50% 100%;
+
+    + transition de 8s em img-port
+}
+*/
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+
+    background-color: #000000b8;
+    color: #fff;
+
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
